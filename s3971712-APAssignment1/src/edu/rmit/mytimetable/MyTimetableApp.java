@@ -4,7 +4,7 @@ public class MyTimetableApp {
 
 	public static void main(String[] args) {
 		
-		Course rmitCourse = new Course(
+		Course Course = new Course(
 				" Java Programming", 
 				"120",
 				"Year 1",
@@ -16,7 +16,7 @@ public class MyTimetableApp {
 		System.out.println("Welcome to MyTimeTable!");
 		System.out.println("-----------------------");
 		System.out.println("Sample course summary");
-		System.out.println(sampleCourse.getSummary());
+		System.out.println(Course.getSummary());
 		
 
 	}

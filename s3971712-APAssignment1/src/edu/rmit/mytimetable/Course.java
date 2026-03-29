@@ -16,15 +16,15 @@ public class Course {
 			String year, 
 			String deliveryMode,
 			String dayOfLecture, 
-			String timeOflecture,
+			String timeOfLecture,
 			int durationHours) {
 		this.name = name;
 		this.capacity = capacity; 
 		this.year = year;
 		this.deliveryMode = deliveryMode;
 		this.dayOfLecture = dayOfLecture;
+		this.timeOfLecture = timeOfLecture;
 		this.durationHours = durationHours;
-		
 		
 	}
 	public String getSummary(){
