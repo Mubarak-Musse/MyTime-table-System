@@ -32,6 +32,12 @@ MyTimetable is a console-based course management system written in Java. It allo
   - `CourseCatalog` has a composition relationship with many `Course` objects (`List<Course>`)
   - `StudentTimetable` holds references to many `Course` objects via a collection
 
+## UML Class Diagram
+
+The following class diagram shows the main classes in the MyTimetable system and their relationships.
+
+![MyTimetable UML Class Diagram](images/Uml-class-diagram.png)
+
 ## Technologies
 
 - Java SE 8 or later
