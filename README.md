@@ -1,12 +1,12 @@
 # MyTimetable – Java Console Course Management System
 
-MyTimetable is a console-based course management system written in Java. It allows a student to search available courses, enroll, view their timetable, and withdraw from courses, using an object-oriented design and the Java Collections Framework. [file:1][file:2]
+MyTimetable is a console-based course management system written in Java. It allows a student to search available courses, enroll, view their timetable, and withdraw from courses, using an object-oriented design and the Java Collections Framework.
 
 ## Overview
 
 - Individual assignment for COSC1295 Advanced Programming (RMIT)
 - Focus on Java basics, OO concepts, and Java Collections
-- Loads course data from a CSV file and manages a simple student timetable [file:1][file:2]
+- Loads course data from a CSV file and manages a simple student timetable
 
 ## Features
 
@@ -15,18 +15,18 @@ MyTimetable is a console-based course management system written in Java. It allo
 3. Enroll in a selected course
 4. View all enrolled courses in a formatted list
 5. Withdraw from an enrolled course
-6. Exit cleanly via a text-based main menu [file:1]
+6. Exit cleanly via a text-based main menu
 
 ## Object-Oriented Design
 
 - **Encapsulation**
   - All instance fields are `private`
-  - Access is provided via public methods only where appropriate [file:1]
+  - Access is provided via public methods only where appropriate
 - **Classes and responsibilities**
-  1. `Course` – represents a single course (name, capacity, year, delivery mode, day/time, duration) and can return a formatted summary line [file:1]
-  2. `CourseCatalog` – stores all available courses and supports search by keyword [file:1]
+  1. `Course` – represents a single course (name, capacity, year, delivery mode, day/time, duration) and can return a formatted summary line  
+  2. `CourseCatalog` – stores all available courses and supports search by keyword  
   3. `StudentTimetable` – stores the current student’s enrolled courses and supports enroll/withdraw operations
-  4. `MyTimetableApp` – console controller that shows the menu and coordinates user interaction with the other classes [file:1]
+  4. `MyTimetableApp` – console controller that shows the menu and coordinates user interaction with the other classes  
 - **Relationships**
   - `MyTimetableApp` has associations with `CourseCatalog` and `StudentTimetable`
   - `CourseCatalog` has a composition relationship with many `Course` objects (`List<Course>`)
@@ -37,12 +37,12 @@ MyTimetable is a console-based course management system written in Java. It allo
 - Java SE 8 or later
 - Java Collections Framework (`List`, etc.)
 - Console I/O (`Scanner`)
-- CSV file as the data source for courses (`courses.csv`) [file:1]
+- CSV file as the data source for courses (`courses.csv`)
 
 ## How to Run
 
 1. Clone this repository.
-2. Ensure `courses.csv` is available in the expected location (for example, project root or a resources folder). [file:1]
+2. Ensure `courses.csv` is available in the expected location (for example, project root or a resources folder). 
 3. Compile the project, for example:
 
    ```bash
@@ -59,20 +59,20 @@ MyTimetable is a console-based course management system written in Java. It allo
    - Search by keyword and enroll
    - Show enrolled courses
    - Withdraw from a course
-   - Exit the program [file:1]
+   - Exit the program
 
 ## Example User Flow
 
 1. Start the application and see the main menu.
-2. Choose “Search by keyword to enroll” and enter a keyword such as `programming`. [file:1]
+2. Choose “Search by keyword to enroll” and enter a keyword such as `programming`. 
 3. Select a course from the matching list to enroll.
-4. Choose “Show my enrolled courses” to view the current timetable. [file:1]
-5. Optionally choose “Withdraw from a course” to drop a course. [file:1]
+4. Choose “Show my enrolled courses” to view the current timetable. 
+5. Optionally choose “Withdraw from a course” to drop a course.
 
 ## Code Quality and Practices
 
 - Descriptive class, method, and variable names
-- Short, focused methods (no very long methods) [file:2]
+- Short, focused methods (no very long methods) 
 - Basic comments and/or Javadoc for key classes and methods
 - Git used for feature-based commits to track development progress
 
@@ -86,5 +86,5 @@ MyTimetable is a console-based course management system written in Java. It allo
 ## Learning Outcomes (Personal)
 
 - Practised Java object-oriented design (encapsulation, composition, associations)
-- Worked with the Java Collections Framework instead of primitive arrays [file:1]
+- Worked with the Java Collections Framework instead of primitive arrays
 - Used Git and GitHub to manage and document a small console application
