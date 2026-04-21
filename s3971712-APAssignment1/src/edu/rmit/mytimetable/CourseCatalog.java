@@ -10,19 +10,7 @@ public class CourseCatalog {
 	
 	private List<Course> courses;
 	
-    /**
-     * Loads courses from a CSV file and adds them to the catalog.
-     * The CSV is expected to have a header line followed by course records.
-     */
-    /**
-     * Loads courses from a CSV file and adds them to the catalog.
-     * Follows the pattern demonstrated in the lecture transcript:
-     *  - FileReader + BufferedReader
-     *  - while ((line = reader.readLine()) != null) loop
-     *  - split each line by comma into fields.
-     *
-     * @param filePath the path to the CSV file (e.g. "course.csv")
-     */
+     // Loads courses from a CSV file and adds them to the catalog.
     public void loadFromCsv(String filePath) {
         try {
             // Create a FileReader and wrap it in a BufferedReader.
@@ -35,17 +23,10 @@ public class CourseCatalog {
             // Read the rest of the file line by line.
             line = reader.readLine();
             while (line != null) {
+            	
                 // Each line represents one course, fields separated by commas.
                 String[] data = line.split(",");
 
-                // Expected columns from course.csv:
-                // 0: Course name
-                // 1: Capacity
-                // 2: Year
-                // 3: Delivery mode
-                // 4: Day of lecture
-                // 5: Time of lecture
-                // 6: Duration of lecture (hour)
                 if (data.length >= 7) {
                     String name = data[0].trim();
                     String capacity = data[1].trim();

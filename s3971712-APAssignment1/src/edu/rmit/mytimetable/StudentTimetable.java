@@ -6,10 +6,9 @@ import java.util.List;
 public class StudentTimetable {
 	
 	
-	/**
-	 * StudentTimetable stores the list of courses that a single student
-	 * is currently enrolled in and provides operations to enroll and withdraw.
-	 */
+	// StudentTimetable stores the list of courses that a single student
+	 // is currently enrolled in and provides operations to enroll and withdraw.
+	 
   
 	    private List<Course> enrolledCourses;
 
